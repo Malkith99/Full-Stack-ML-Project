@@ -8,7 +8,77 @@
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <div class="title">
+            Loan Status Predictor
+        </div>
+        <form action="/">
+            <div class="form">
+                <div class="inputfield">
+                    <label>Gender</label>
+                    <select>
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                    </select>
+                </div>
+                <div class="inputfield">
+                    <label>Married</label>
+                    <select>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="inputfield">
+                    <label>Dependents</label>
+                    <select>
+                        <option value="0">None</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="4">Four</option>
+                    </select>
+                </div>
+                <div class="inputfield">
+                    <label>Education</label>
+                    <select>
+                        <option value="1">Graduate</option>
+                        <option value="0">Not Graduate</option>
+                    </select>
+                </div>
+                <div class="inputfield">
+                    <label>Self Employed</label>
+                    <select>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+                <div class="inputfield">
+                    <label>Applicant Income</label>
+                    <input type="text" class="input" name="Applicant Income" required>
+                </div>
+                <div class="inputfield">
+                    <label>Coapplicant Income</label>
+                    <input type="text" class="input" name="Coapplicant Income" required>
+                </div>
+                <div class="inputfield">
+                    <label>Loan Amount</label>
+                    <input type="text" class="input" name="Loan Amount" required>
+                </div>
+                <div class="inputfield">
+                    <label>Loan Amount Term</label>
+                    <input type="text" class="input" name="Loan Amount Term" required>
+                </div>
+                <div class="check">
+                    <div>
+                        <label>Credit History</label>
+                        <input type="checkbox" name="Credit History">
+                    </div>
+                </div>
+                <div class="inputfield">
+                    <input type="submit" value="Predict" class="btn">
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
