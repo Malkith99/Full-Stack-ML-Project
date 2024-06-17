@@ -16,21 +16,24 @@
             <div class="form">
                 <div class="inputfield">
                     <label>Gender</label>
-                    <select>
+                    <select name="Gender" id="gender">
+                        <option value="" select hidden>Select</option>
                         <option value="1">Male</option>
                         <option value="0">Female</option>
                     </select>
                 </div>
                 <div class="inputfield">
                     <label>Married</label>
-                    <select>
+                    <select name="Married" id="married">
+                        <option value="" select hidden>Select</option>
                         <option value="1">Yes</option>
                         <option value="0">No</option>
                     </select>
                 </div>
                 <div class="inputfield">
                     <label>Dependents</label>
-                    <select>
+                    <select name="Dependents" id="dependents">
+                        <option value="" select hidden>Select</option>
                         <option value="0">None</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -39,14 +42,16 @@
                 </div>
                 <div class="inputfield">
                     <label>Education</label>
-                    <select>
+                    <select name="Education" id="education">
+                        <option value="" select hidden>Select</option>
                         <option value="1">Graduate</option>
                         <option value="0">Not Graduate</option>
                     </select>
                 </div>
                 <div class="inputfield">
                     <label>Self Employed</label>
-                    <select>
+                    <select name="Self Employed" id="selfEmployed">
+                        <option value="" select hidden>Select</option>
                         <option value="1">Yes</option>
                         <option value="0">No</option>
                     </select>
@@ -74,7 +79,7 @@
                     </div>
                 </div>
                 <div class="inputfield">
-                    <input type="submit" value="Predict" class="btn">
+                    <input type="submit" value="Predict the State" class="btn">
                 </div>
             </div>
         </form>
