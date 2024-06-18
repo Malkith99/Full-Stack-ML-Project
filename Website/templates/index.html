@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/style/style.css">
     <title>Predictor</title>
 </head>
 
@@ -13,11 +13,11 @@
         <div class="title">
             Loan Status Predictor
         </div>
-        <form action="/">
+        <form action="/" method="POST">
             <div class="form">
                 <div class="inputfield">
                     <label>Gender</label>
-                    <select name="Gender" id="gender">
+                    <select name="gender" id="gender">
                         <option value="" select hidden>Select</option>
                         <option value="1">Male</option>
                         <option value="0">Female</option>
@@ -25,7 +25,7 @@
                 </div>
                 <div class="inputfield">
                     <label>Married</label>
-                    <select name="Married" id="married">
+                    <select name="married" id="married">
                         <option value="" select hidden>Select</option>
                         <option value="1">Yes</option>
                         <option value="0">No</option>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="inputfield">
                     <label>Dependents</label>
-                    <select name="Dependents" id="dependents">
+                    <select name="dependents" id="dependents">
                         <option value="" select hidden>Select</option>
                         <option value="0">None</option>
                         <option value="1">One</option>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="inputfield">
                     <label>Education</label>
-                    <select name="Education" id="education">
+                    <select name="education" id="education">
                         <option value="" select hidden>Select</option>
                         <option value="1">Graduate</option>
                         <option value="0">Not Graduate</option>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="inputfield">
                     <label>Self Employed</label>
-                    <select name="Self Employed" id="selfEmployed">
+                    <select name="selfEmployed" id="selfEmployed">
                         <option value="" select hidden>Select</option>
                         <option value="1">Yes</option>
                         <option value="0">No</option>
@@ -59,24 +59,24 @@
                 </div>
                 <div class="inputfield">
                     <label>Applicant Income</label>
-                    <input type="text" class="input" name="Applicant Income" required>
+                    <input type="text" class="input" name="applicantIncome" required>
                 </div>
                 <div class="inputfield">
                     <label>Coapplicant Income</label>
-                    <input type="text" class="input" name="Coapplicant Income" required>
+                    <input type="text" class="input" name="coapplicantIncome" required>
                 </div>
                 <div class="inputfield">
                     <label>Loan Amount</label>
-                    <input type="text" class="input" name="Loan Amount" required>
+                    <input type="text" class="input" name="loanAmount" required>
                 </div>
                 <div class="inputfield">
                     <label>Loan Amount Term</label>
-                    <input type="text" class="input" name="Loan Amount Term" required>
+                    <input type="text" class="input" name="loanAmountTerm" required>
                 </div>
                 <div class="check">
                     <div>
-                        <label>Credit History</label>
-                        <input type="checkbox" name="Credit History">
+                        <label for="creditHistory">Credit History</label>
+                        <input type="checkbox" name="creditHistory">
                     </div>
                 </div>
                 <div class="inputfield">
