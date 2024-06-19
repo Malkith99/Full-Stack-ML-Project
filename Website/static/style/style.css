@@ -5,6 +5,38 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header,
+footer {
+    background-color: #000000a0;
+    color: rgb(255, 251, 251);
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding: auto;
+}
+
+header {
+    /*element selector */
+    top: 0;
+    position: absolute;
+    padding: 5px 0;
+}
+
+.headerLeft {
+    /*class selector */
+    float: left;
+    padding-left: 20px;
+}
+
+.headerRight {
+    float: right;
+    padding-right: 20px;
+}
+
 body {
     background: url(../images/image1.jpg) no-repeat;
     background-size: cover;
@@ -21,7 +53,7 @@ body {
     background: #cecece;
     margin: 20px auto;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.125);
-    padding: 30px;
+    padding: 20px 30px;
     border-radius: 15px;
 }
 
