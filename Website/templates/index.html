@@ -94,9 +94,9 @@
                     <div class="custom_select">
                         <select name="propertyArea" id="propertyArea">
                             <option value="" select hidden>Select</option>
-                            <option value="semiUrban">Semiurban</option>
-                            <option value="urban">Urban</option>
-                            <option value="rural">Rural</option>
+                            <option value="Semiurban">Semiurban</option>
+                            <option value="Urban">Urban</option>
+                            <option value="Rural">Rural</option>
                         </select>
                     </div>
                 </div>
@@ -111,10 +111,15 @@
                 </div>
             </div>
         </form>
+        <div class="result">
+            {% if pred!= NULL %}
+            <p>{{pred}}</p>
+            {% endif %}
+        </div>
     </div>
 </body>
-<footer>
+<!-- <footer>
     <p>Copyright &copy; 2024, All Rights Reserved</p>
-</footer>
+</footer> -->
 
 </html>

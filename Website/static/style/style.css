@@ -158,7 +158,7 @@ body {
 
 .result p {
     text-align: center;
-    color: blue;
+    color: rgb(118, 1, 1);
     font-size: 18px;
     font-weight: bold;
 }
