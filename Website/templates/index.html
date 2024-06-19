@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style/style.css">
+    <link rel="stylesheet" href="../static/style/style.css">
     <title>Predictor</title>
 </head>
 <header>
@@ -25,6 +25,7 @@
 </header>
 
 <body>
+    <form>
     <div class="wrapper">
         <div class="title">
             Loan Status Predictor
@@ -33,45 +34,55 @@
             <div class="form">
                 <div class="inputfield">
                     <label>Gender</label>
-                    <select name="gender" id="gender">
-                        <option value="" select hidden>Select</option>
-                        <option value="1">Male</option>
-                        <option value="0">Female</option>
-                    </select>
+                    <div class="custom_select">
+                        <select name="gender" id="gender">
+                            <option value="" select hidden>Select</option>
+                            <option value="1">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="inputfield">
                     <label>Married</label>
-                    <select name="married" id="married">
-                        <option value="" select hidden>Select</option>
-                        <option value="1">Yes</option>
-                        <option value="0">No</option>
-                    </select>
+                    <div class="custom_select">
+                        <select name="married" id="married">
+                            <option value="" select hidden>Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="inputfield">
                     <label>Dependents</label>
-                    <select name="dependents" id="dependents">
-                        <option value="" select hidden>Select</option>
-                        <option value="0">None</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="4">Four</option>
-                    </select>
+                    <div class="custom_select">
+                        <select name="dependents" id="dependents">
+                            <option value="" select hidden>Select</option>
+                            <option value="0">None</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="4">Four</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="inputfield">
                     <label>Education</label>
-                    <select name="education" id="education">
-                        <option value="" select hidden>Select</option>
-                        <option value="1">Graduate</option>
-                        <option value="0">Not Graduate</option>
-                    </select>
+                    <div class="custom_select">
+                        <select name="education" id="education">
+                            <option value="" select hidden>Select</option>
+                            <option value="1">Graduate</option>
+                            <option value="0">Not Graduate</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="inputfield">
                     <label>Self Employed</label>
-                    <select name="selfEmployed" id="selfEmployed">
-                        <option value="" select hidden>Select</option>
-                        <option value="1">Yes</option>
-                        <option value="0">No</option>
-                    </select>
+                    <div class="custom_select">
+                        <select name="selfEmployed" id="selfEmployed">
+                            <option value="" select hidden>Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="inputfield">
                     <label>Applicant Income</label>
@@ -117,6 +128,7 @@
             {% endif %}
         </div>
     </div>
+</form>
 </body>
 <!-- <footer>
     <p>Copyright &copy; 2024, All Rights Reserved</p>

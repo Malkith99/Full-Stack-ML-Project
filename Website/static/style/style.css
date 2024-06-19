@@ -57,13 +57,18 @@ nav li a:hover {
 }
 
 body {
-    background: url(../images/image1.jpg) no-repeat;
+    background: url(../images/image1.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper {
@@ -74,6 +79,7 @@ body {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.125);
     padding: 10px 30px;
     border-radius: 15px;
+    margin-top: 250px;
 }
 
 .wrapper .title {
