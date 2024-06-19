@@ -16,25 +16,44 @@ footer {
 footer {
     position: absolute;
     bottom: 0;
-    padding: auto;
+    padding: 5px 0;
+    font-size: small;
 }
 
 header {
     /*element selector */
     top: 0;
     position: absolute;
-    padding: 5px 0;
 }
 
 .headerLeft {
     /*class selector */
     float: left;
-    padding-left: 20px;
+    padding: 10px 10px;
 }
 
-.headerRight {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav li {
     float: right;
-    padding-right: 20px;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
 }
 
 body {
@@ -53,7 +72,7 @@ body {
     background: #cecece;
     margin: 20px auto;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.125);
-    padding: 20px 30px;
+    padding: 10px 30px;
     border-radius: 15px;
 }
 
