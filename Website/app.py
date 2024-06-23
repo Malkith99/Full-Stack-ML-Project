@@ -13,6 +13,7 @@ def prediction(lst):
 
 @app.route('/',methods=['POST','GET'])
 def index():
+    pred="NULL"
     if request.method=='POST':
         gender=request.form['gender']
         married=request.form['married']

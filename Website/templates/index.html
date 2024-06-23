@@ -25,7 +25,6 @@
 </header>
 
 <body>
-    <form>
     <div class="wrapper">
         <div class="title">
             Loan Status Predictor
@@ -123,12 +122,11 @@
             </div>
         </form>
         <div class="result">
-            {% if pred!= NULL %}
+            {% if pred!= "NULL" %}
             <p>{{pred}}</p>
             {% endif %}
         </div>
     </div>
-</form>
 </body>
 <!-- <footer>
     <p>Copyright &copy; 2024, All Rights Reserved</p>
