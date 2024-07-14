@@ -1,0 +1,49 @@
+header {
+    background-color: #000000a0;
+    color: rgb(255, 251, 251);
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    /*element selector */
+    top: 0;
+    position: absolute;
+    font-size: 20px;
+}
+
+.headerLeft {
+    float: left;
+    padding: 5px 15px;
+
+}
+
+.headerRight {
+    float: right;
+    padding: 10px 15px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.headerRight nav li {
+    float: right;
+}
+
+.headerRight nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.headerRight nav li a:hover {
+    background-color: #111;
+}
