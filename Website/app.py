@@ -6,7 +6,7 @@ app=Flask(__name__)
 
 def prediction(lst):
     filename = 'model/predictor1.pickle'
-    with open(filename, 'rb') as file:      #rb- read binart
+    with open(filename, 'rb') as file:      #rb- read binary
         model = pickle.load(file)
     pred_value = model.predict([lst])
     return pred_value
