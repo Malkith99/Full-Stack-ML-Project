@@ -1,23 +1,30 @@
 import React from 'react'
-import './Header.css'
+import './header.css'
 
 export default function Header() {
     return (
-        <header>
-            <div class="headerLeft">
+        <div className="header">
+            {/* <p>Let us <b>Predict</b></p>
+            <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav> */}
+
+            <div className="headerLeft">
                 <p>Let us <b>Predict</b></p>
             </div>
-            <div class="headerRight">
+            <div className="headerRight">
                 <nav>
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/about">About</a></li>
-                        <li><a href="/services">Services</a></li>
                         <li><a href="/contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-
-        </header>
+        </div>
     )
 }

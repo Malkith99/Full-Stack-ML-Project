@@ -1,15 +1,10 @@
-header {
+.header {
     background-color: #000000a0;
     color: rgb(255, 251, 251);
     width: 100%;
-    text-align: center;
-}
-
-header {
-    /*element selector */
-    top: 0;
-    position: absolute;
+    top: 0px;
     font-size: 20px;
+    position: fixed;
 }
 
 .headerLeft {
@@ -24,7 +19,7 @@ header {
 
 }
 
-nav ul {
+.headerRight nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -33,7 +28,7 @@ nav ul {
 }
 
 .headerRight nav li {
-    float: right;
+    float: left;
 }
 
 .headerRight nav li a {
