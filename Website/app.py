@@ -30,8 +30,14 @@ def index():
         else:
             creditHistory=0
 
+        # Standard scale the numerical features
+        with open('scaler/scaler.pickle', 'rb') as file:
+            scaler = pickle.load(file)
+        scaled_values = scaler.transform([[applicantIncome, coapplicantIncome, loanAmount, loanAmountTerm]])[0]
+        print(scaled_values)
 
-        feature_list=[int(gender),int(married),int(dependents),int(education),int(selfEmployed),int(applicantIncome),int(coapplicantIncome),int(loanAmount),int(loanAmountTerm)]
+        #feature_list=[int(gender),int(married),int(dependents),int(education),int(selfEmployed),int(applicantIncome),int(coapplicantIncome),int(loanAmount),int(loanAmountTerm)]
+        feature_list=[int(gender),int(married),int(dependents),int(education),int(selfEmployed),scaled_values[0],scaled_values[1],scaled_values[2],scaled_values[3]]
 
         property_list=['Semiurban','Urban','Rural']    
         def encodingList(list,value):    
